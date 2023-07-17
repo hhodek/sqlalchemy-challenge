@@ -1,23 +1,28 @@
-# Import the dependencies.
+from flask import Flask, jsonify
+from sqlalchemy import create_engine, func
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
 
-
+# Create an instance of Flask
+app = Flask(__name__)
 
 #################################################
 # Database Setup
 #################################################
 
+# Create engine to connect to SQLite database
+engine = create_engine("sqlite://hawaii.sqlite")
 
-# reflect an existing database into a new model
+# Reflect the database tables into classes
+Base = automap_base()
+Base.prepare(engine, reflect=True)
 
-# reflect the tables
+# Save references to the tables
+Measurement = Base.classes.measurement
+Station = Base.classes.station
 
-
-# Save references to each table
-
-
-# Create our session (link) from Python to the DB
-
-
+# Create a session (link) from Python to the database
+session = Session(engine)
 #################################################
 # Flask Setup
 #################################################
