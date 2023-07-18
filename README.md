@@ -32,3 +32,6 @@ The Flask API is developed to provide access to the climate data through various
 4. Run the Flask app by executing the app.py file.
 5. Access the available routes through the provided endpoints using an API testing tool or web browser.
 
+## Credits
+Referenced class materials and ChatGPT
+
