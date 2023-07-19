@@ -1,8 +1,5 @@
 # SQL Alchemy Challenge
 
-## Description
-This project involves analyzing climate data for Honolulu, Hawaii and creating a Flask API to provide various routes for accessing the data. The project includes two parts: climate analysis and Flask API development.
-
 ## Climate Analysis (climate_starter.ipynb)
 The climate analysis is performed using Python, SQLAlchemy, Pandas, and Matplotlib. The following steps are covered in the analysis:
 
